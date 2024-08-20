@@ -168,7 +168,6 @@ tr:last-child td:last-child {
     border-bottom-right-radius: 15px;
 }
 
-
 .table tbody td {
     
     background-color: thistle;
@@ -191,7 +190,7 @@ tr:last-child td:last-child {
     }
 
     .bot .btn {
-        width: 20%;
+        width: 30%;
 
     }
 
