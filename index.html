@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="icon" type="image/png" href="./images/book.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lobster&family=Lobster+Two:wght@400;700&family=Pacifico&family=Rubik:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <!--bootstrap style link-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!--main style link-->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <div class="container py-5">
+        <h1 class="text-center text my-4 p-2"> Bookmarker </h1>
+        <hr>
+        <h2 class="book text-center">
+            <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i>
+        </h2>
+
+        <div class="form-group my-4 fs-5 plu">
+            <label for=" SiteName"> <i class="fa-solid fa-book-bookmark"></i> Site Name </label>
+            <input type="text" id="SiteName" class="form-control my-2" placeholder="Bookmark Name">
+            <div id="nameError" class="text-danger""></div>
+            </div>
+            <div class=" form-group my-4 fs-5 plu">
+                <label for="SiteURL"> <i class="fa-solid fa-link "></i> Site URL </label>
+                <input type="text" id="SiteURL" class="form-control my-2" placeholder="Website Url">
+                <div id="urlError" class="text-danger""></div>
+            </div>
+        <div class=" bot" id="submitBtn"> <button class=" btn btn-outline  ">Submit</button> </div>
+                <div class="ser fs-4">
+                    <label for="search-bar"><i class="fa-solid fa-magnifying-glass"></i> search</label>
+                    <input type=" text" id="search-bar" placeholder=" Search bookmarks..." class="form-control my-2">
+                </div>
+                <hr>
+                <table class="table text-center my-5 ">
+                    <thead>
+                        <th>index</th>
+                        <th>Website Name</th>
+                        <th>Visit </th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="dataa">
+                    </tbody>
+                </table>
+            </div>
+            <div id="lightBoxContainer"
+                class="w-100  position-fixed d-none justify-content-center align-items-center top-0 ">
+                <div id="lightBox" class="d-flex text-center position-relative ">
+                    <i class="fa-solid fa-xmark fs-5 position-absolute top-0 end-0 p-3" id="closingIcon"></i>
+                    <div class="content position-relative ">
+                        <i class="fa-solid fa-bell text-danger my-4"></i>
+                        <i class="fa-solid fa-bell text-danger my-4"></i>
+                        <i class="fa-solid fa-bell text-danger my-4"></i>
+                        <h4 class="fs-5 fw-bold  text-start">Site Name or Url is not valid, Please follow the rules
+                            below :</h4>
+                        <p class=" p-2 m-2 "><i class="fa-regular fa-circle-right p-2 text-danger"></i>Site name must
+                            contain at least 3 characters and be in English</p>
+                        <p class="my-2 "><i class="fa-regular fa-circle-right p-2 text-danger"></i>Site URL must be a
+                            valid one</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--bootstrap script link -->
+            <script src="./js/bootstrap.bundle.min.js"></script>
+            <!--main script link -->
+            <script src="./js/main.js"></script>
+</body>
+
+</html>

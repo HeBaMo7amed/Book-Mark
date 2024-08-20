@@ -1,0 +1,198 @@
+body {
+
+    background-color: snow;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    ;
+
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 150vh;
+}
+
+.book {
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(87, 3, 87), rgb(124, 11, 124), darkmagenta, plum, plum);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 20px;
+}
+
+.book i {
+    background: linear-gradient(to right, purple, darkmagenta, plum, plum, darkmagenta, ghostwhite);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.text {
+
+    color: darkmagenta;
+    font-style: italic;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    letter-spacing: 2px;
+
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: thistle;
+    width: 100%;
+    height: 30%;
+    transition: height 0.2s;
+    cursor: text;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.text:hover::after {
+    height: 70%;
+}
+
+hr {
+    border: 2px dashed thistle !important;
+    opacity: 1;
+    margin-top: 50px;
+    opacity: 75%;
+}
+
+.bot {
+    text-align: center;
+}
+
+.bot .btn {
+    width: 15%;
+    color: ghostwhite;
+    background-color: darkmagenta;
+
+}
+#closingIcon{
+    color: darkmagenta;
+}
+#lightBoxContainer {
+
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100vh;
+}
+
+#lightBox {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: snow;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#lightBox .content {
+    color: darkmagenta;
+    font-size: large;
+}
+
+.btn-danger {
+    background-color: transparent;
+    border-color:darkmagenta ;
+    color: darkmagenta;
+}
+
+.btn-danger:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+.btn-primary {
+    color: darkmagenta;
+    background-color: transparent;
+    border-color: darkmagenta;
+}
+
+.btn-primary:hover {
+    background-color: darkmagenta;
+    border-color: darkmagenta;
+}
+
+.plu {
+    color: darkmagenta;
+}
+
+.ser {
+    color: darkmagenta;
+}
+
+
+.d-none {
+    display: none;
+}
+
+.is-invalid {
+    border-color: #dc3545;
+}
+
+
+th:first-child {
+    border-top-left-radius: 15px;
+}
+
+th:last-child {
+    border-top-right-radius: 15px;
+}
+.table thead th {
+    background-color: thistle;
+    color: darkmagenta;
+    
+}
+tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+
+.table tbody td {
+    
+    background-color: thistle;
+    color: darkmagenta;
+
+  
+}
+
+@media screen and (max-width:800px) {
+    #lightBox {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .bot .btn {
+        width: 20%;
+
+    }
+
+}
